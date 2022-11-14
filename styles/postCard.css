@@ -1,0 +1,143 @@
+.wrapper {
+  padding: 30px 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block-post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(36, 135, 99, 0.26);
+  border-radius: 40px;
+  padding: 10px 10px 10px;
+  margin-bottom: 10px;
+}
+.block-post__preview {
+  display: flex;
+  align-items: center;
+}
+.block-post__img {
+  padding-left: 20px;
+}
+.block-title {
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 10px;
+  color: #000000;
+}
+.block-post__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 2px solid #928c8c;
+  border-radius: 30px;
+}
+.block-post__title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+}
+.block-post__subtitle {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 20px;
+  color: #000000;
+  padding: 5px 20px;
+}
+.block-post__delete {
+  display: flex;
+  width: 15%;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 45%;
+  border-radius: 40px;
+  border: none;
+  background: floralwhite;
+  color: coral;
+  cursor: pointer;
+}
+.block-post__comment {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 0px 0px 20px 20px;
+  padding: 10px 10px 10px;
+}
+.block-post__icons {
+  display: flex;
+  justify-content: flex-start;
+}
+.like-icon {
+  padding-left: 10px;
+  background: none;
+}
+span {
+  color: #ffffff;
+}
+.comment-span {
+  padding-left: 5px;
+}
+.like-span {
+  padding-left: 5px;
+}
+.svg-like {
+  margin-left: 10px;
+}
+/* Media request for 768px */
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 30px 85px;
+  }
+  .block-post__img {
+    width: 70px;
+  }
+  .block-title {
+    font-size: 20px;
+  }
+  .block-post__title {
+    font-size: 25px;
+    padding-top: 35px;
+  }
+  .block-post__subtitle {
+    font-size: 20px;
+    height: 190px;
+    padding: 55px 20px;
+  }
+  .block-post__comment {
+    font-size: 25px;
+  }
+}
+/* Media request for 1440px */
+@media (min-width: 1440px) {
+  .block-post {
+    width: 49%;
+  }
+  .block-post__img {
+    width: 50px;
+  }
+  .block-title {
+    font-size: 15px;
+  }
+  .block-post__title {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+  .block-post__subtitle {
+    font-size: 15px;
+    padding-left: 35px;
+    height: 15vh;
+    padding-top: 25px;
+  }
+  .block-post__comment {
+    font-size: 15px;
+    padding: 0;
+  }
+}

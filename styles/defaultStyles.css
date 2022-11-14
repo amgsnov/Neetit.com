@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  min-width: 360px;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: Poppins;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  opacity: 0.7;
+}
+.svg-like {
+  width: 20px;
+  height: 25px;
+}
+.svg-comment {
+  width: 25px;
+  height: 25px;
+}
+@media (min-width: 768px) {
+  .svg-like {
+    width: 30px;
+    height: 40px;
+  }
+  .svg-comment {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .svg-like {
+    width: 20px;
+    height: 45px;
+  }
+  .svg-comment {
+    width: 30px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  .like-span,
+  .comment-span {
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7639a1987e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/defaultStyles.css">
+    <link rel="stylesheet" href="../styles/editProfile.css">
+    <title>Edit Profile</title>
+</head>
+
+<body>
+<!-- Navbar__mobile -->
+<nav class="navigation-mobile">
+    <a href="./feedPage.html" class="nav__link">
+        <i class="material-icons nav__icon">home</i>
+        <span class="nav__text">Feed</span>
+    </a>
+    <a href="./feedPage.html" class="nav__link">
+        <i class="material-icons nav__icon">favorite</i>
+        <span class="nav__text">Favorites</span>
+    </a>
+    <a href="./profilePage.html" class="nav__link nav__link--active">
+        <i class="material-icons nav__icon">person</i>
+        <span class="nav__text">Profile</span>
+    </a>
+</nav>
+<!-- Ipad menu  -->
+<header>
+    <nav>
+        <div class="logo-container">
+            <label class="logo-txt">Neetit.com</label>
+            <img class="logo" src="../illustrations/logo.png" width="40px">
+        </div>
+        <label for="check" class="hamburger-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-list">
+            <li><a href="./feedPage.html">Feed</a></li>
+            <li><a href="./feedPage.html">Favorites</a></li>
+            <li><a href="./profilePage.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Content -->
+<main class="section">
+    <div class="change">
+        <img class="user-photo" src="../illustrations/monro.svg">
+        <button class="change-photo">Change photo</button>
+    </div>
+    <form class="list-input" id="changeName">
+        <input class="list-input__email" type="email" placeholder="E-mail:jeanlopez@hotmail.cc" readonly>
+        <input class="list-input__name" type="text" placeholder="Name:Jean" name="Name" id="name">
+        <input class="list-input__surname" type="text" placeholder="Surname:Lopez" name="Surname" id="surname">
+        <button class="list-input__save">Save</button>
+        <input class="list-input__password" type="password" placeholder="Password:  *****************"
+               name="password" id="password">
+        <input class="list-input__password" type="password" placeholder="New Password:" name="new Password"
+               id="newPassword">
+        <input class="list-input__password" type="text" placeholder="Confirm password:" name="confirm" id="confirm">
+        <button class="list-input__save">Save</button>
+</main>
+<script src="../js/navbar.js"></script>
+<script src="../js/editProfileLs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.user-photo {
+  height: 90px;
+  margin-left: 40px;
+}
+.change-photo {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 105%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  width: 175px;
+  height: 30px;
+  color: rgba(36, 135, 99, 0.85);
+  background: #ffffff;
+  border: 1px solid rgba(146, 140, 140, 0.26);
+  border-radius: 20px;
+  padding: 5px 30px 5px 30px;
+  cursor: pointer;
+}
+.list-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 25px;
+}
+.list-input__email,
+.list-input__name,
+.list-input__surname {
+  outline: none;
+  padding: 10px 0px 10px 25px;
+  background: #ffffff;
+  border: 2px solid #928c8c;
+  border-radius: 10px;
+  width: 325px;
+  height: 40px;
+}
+.list-input__email {
+  background: #f5f5f5;
+}
+.list-input__save {
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(36, 135, 99, 0.85);
+  border-radius: 100px;
+  text-decoration: none;
+  width: 50%;
+  height: 30px;
+  margin-left: 80px;
+  border: none;
+}
+.list-input__password {
+  outline: none;
+  padding: 10px 0px 10px 25px;
+  background: #ffffff;
+  border: 2px solid #928c8c;
+  border-radius: 10px;
+  width: 325px;
+  height: 40px;
+}
+/* Media Request for 768px */
+@media (min-width: 768px) {
+  .change-photo {
+    height: 40px;
+    padding: 5px 30px 5px 30px;
+  }
+  .list-input__email,
+  .list-input__name,
+  .list-input__surname {
+    width: 375px;
+    height: 55px;
+    font-size: 20px;
+  }
+  .list-input__password {
+    width: 375px;
+    height: 55px;
+    font-size: 20px;
+  }
+  .list-input__save {
+    width: 60%;
+    height: 55px;
+    font-size: 15px;
+  }
+  nav {
+    position: static;
+  }
+}
+/* Media Request for 1440px */
+@media (min-width: 1440px) {
+  .user-photo {
+    height: 80px;
+  }
+  .change-photo {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+  }
+  .list-input__email,
+  .list-input__name,
+  .list-input__surname {
+    width: 400px;
+    height: 55px;
+    font-size: 15px;
+  }
+  .list-input__save {
+    width: 45%;
+    height: 35px;
+    font-size: 15px;
+    margin-left: 95px;
+  }
+  .list-input__password {
+    width: 400px;
+    height: 55px;
+    font-size: 15px;
+  }
+}
