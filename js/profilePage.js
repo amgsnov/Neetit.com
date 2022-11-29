@@ -43,7 +43,7 @@ function postGeneration(title, description, id) {
   post.className = "block-post";
   post.innerHTML = `
       <div class="block-post__preview">
-      <img class="block-post__img" src="../illustrations/monro.svg">
+      <img class="block-post__img" src="../images/monro.svg">
       <p class="block-title">Jean Lopez</p>
       <button type="button" data-id=${id} data-action="delete" class="block-post__delete">Delete</button>
   </div>

@@ -19,7 +19,6 @@ function getNeededComments() {
   const neededPost = getNeededPost();
 
   const comments = JSON.parse(localStorage.getItem("comments"));
-  console.log(comments);
   return comments.filter((comment) => comment.postId === neededPost.id);
 }
 
@@ -29,7 +28,7 @@ if (localStorage.getItem("posts")) {
   post.className = "block-post";
   post.innerHTML = `
       <div class="block-post__preview">
-      <img class="block-post__img" src="../illustrations/monro.svg">
+      <img class="block-post__img" src="../images/monro.svg">
       <p class="block-title">Jean Lopez</p>
       
   </div>
@@ -88,7 +87,7 @@ function commentGeneration(title, id) {
   comment.className = "comment-author";
   comment.innerHTML = `
   <div>
-    <img class="comment-author__avatar" src="../illustrations/user-png3.png">
+    <img class="comment-author__avatar" src="../images/user-png3.png">
   </div>
   <div>
     <p class="user-name">Larry Zoateng</p>

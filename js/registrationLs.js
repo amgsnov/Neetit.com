@@ -9,7 +9,6 @@ form.addEventListener("input", function (event) {
 /// восстановить данные
 if (localStorage.getItem("registrationData")) {
   registrationData = JSON.parse(localStorage.getItem("registrationData"));
-  console.log(form.elements);
   for (let key in registrationData) {
     form.elements[key].value = registrationData[key];
   }

@@ -16,7 +16,7 @@ function postGeneration(title, description) {
   post.className = "block-post";
   post.innerHTML = `
     <div class="block-post__preview">
-    <img class="block-post__img" src="../illustrations/monro.svg">
+    <img class="block-post__img" src="../images/monro.svg">
     <p class="block-title">Jean Lopez</p>
     <button class="block-post__delete" onclick='document.querySelector(".block-post").outerHTML = ""'>Delete</button>
 </div>
@@ -45,5 +45,4 @@ function postGeneration(title, description) {
   wrapper.appendChild(post);
   form.reset();
 }
-const name = 2;
 

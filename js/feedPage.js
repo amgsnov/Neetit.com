@@ -7,7 +7,7 @@ if (localStorage.getItem("posts")) {
     post.className = "block-post";
     post.innerHTML = `
       <div class="block-post__preview">
-      <img class="block-post__img" src="../illustrations/monro.svg">
+      <img class="block-post__img" src="../images/monro.svg">
       <p class="block-title">Jean Lopez</p>
       
   </div>
